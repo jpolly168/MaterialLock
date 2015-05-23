@@ -1,5 +1,5 @@
 html {
-	background-color: #000000;
+
 }
 h1{
 color:#1565C0;
@@ -16,8 +16,8 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	min-width:850px;
-	min-height:400px;
+	min-width:50px;
+	min-height:500px;
 	margin-top: -275px;
 	margin-left: -330px;	
 	background:#FFF;
@@ -57,7 +57,7 @@ body {
 	position:absolute;
 	margin-left: 42px;
 	margin-top: 38px;
-color:#1565C0;
+	color:#1565C0;
 	font-size:large;
 }
 
@@ -93,7 +93,7 @@ color:#1565C0;
 }
 
 #lsb {
-	color: #3c3c3c;
+	color:#1565C0;
 	position: absolute;
 	width: 100%;
 	margin-top: 75px;
@@ -135,7 +135,7 @@ color:#1565C0;
 }
 
 #label {
-	color: black;
+	color:#1565C0;
 	position:absolute;
 	margin-left: 0px;
 	margin-top: 0px;
@@ -145,42 +145,130 @@ color:#1565C0;
 
 
 }
+.main-buttons{
+	max-width:3em;
+	max-height: auto;
+	
+}
 
 #entry {
 	position:absolute;
 	margin-left: 24px;
 	margin-top: 34px;	
-	width: 170px;  	
-background:#FFF;
-    	border:1px solid #AAA;
+	width: 2300px;
+	height:24px;  	
+	background:#FFF;
+    	border:1px solid #1565C0;
     	border-bottom:3px solid #BBB;		
     	overflow:hidden;
+	color:#1565C0;
     	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
     	font-family: 'Roboto', sans-serif;	
 	width: 230px;
+}
+#close_button {
+	  position:relative;
+	  margin-left: 0em;
+	  margin-top: 0px;
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      border: 2px solid rgba(0, 0, 0, .8)
+      background-color; #B71C1C:
+      color: #fff;
+      overflow: hidden;
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn.btn-fab {
+  margin: 0;
+  padding: 15px;
+  font-size: 26px;
+  width: 56px;
+  height: 56px;
+}
+.btn.btn-fab,
+.btn.btn-fab:hover {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+.btn.btn-fab,
+.btn.btn-fab:hover,
+.btn.btn-fab-default,
+.btn.btn-fab:hover-default {
+  background-color: transparent;
+}
+#power_button {
+	  position:absolute;
+	  margin-left: 8em;
+	  margin-top: 0px;
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      border: 2px solid rgba(0, 0, 0, .8)
+      background-color; #1565C0;
+      color: #fff;
+      overflow: hidden;
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#power_button1 {
+	  position:absolute;
+	  margin-left: 12em;
+	  margin-top: 0px;
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      border-radius: 150%;
+      border: 2px solid rgba(0, 0, 0, .8)
+      background-color; #1565C0;
+      color: #fff;
+      overflow: hidden;
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#power_button2 {
+	  position:absolute;
+	  margin-left: 16em;
+	  margin-top: 0px;
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      border-radius: 150%;
+      border: 2px solid rgba(0, 0, 0, .8)
+      background-color; #1565C0;
+      color: #fff;
+      overflow: hidden;
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #ok_button {
 	position:absolute;
 	margin-left: 275px;
-	margin-top: 34px;
-      	display: inline-block;
+	margin-top: 30px;
+      display: inline-block;
       width: 36px;
       height: 36px;
       border-radius: 50%;
+      border: 2px solid #1565C0;
       color: #fff;
       overflow: hidden;
       transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       transition-delay: 0.2s;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-
-       
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 #buttons {
 	position:absolute;
 	margin-left: 37px;
-	margin-top: 436px;	    
+	margin-top: 100em;	    
 }
 
 #additional_buttons {
@@ -192,11 +280,12 @@ background:#FFF;
 .user-picture {	
 	width: 48px;
 	height: 48px;
+	color:#1565C0;
 }
 
 .username {
 	font-style: italic;	
-	color:#000000;
+	color:#1565C0;
 display: inline-block;
   position: relative;
   width: 100%;
@@ -211,17 +300,17 @@ display: inline-block;
 
 .usergecos {
 	font-weight:bold;
-	color:#000000;
+	color:#1565C0;
 }
 
 .userstatus {
 	font-style: italic;
 	font-size: 10px;
-	color:#000000;	
+	color:#1565C0;	
 }	
 
 #users {
-	color: #000000;
+	color:#1565C0;
 	text-align: left;
 	width:100%;    	
 
@@ -272,7 +361,7 @@ display: inline-block;
 }
 
 #languages {
-	color: black;
+	color:#1565C0;
 	width: 100%;
 	text-align: left;
 }
@@ -282,7 +371,7 @@ display: inline-block;
 }
 
 #sessions {
-	color: black;
+	color:#1565C0;
 	width: 100%;
 	text-align: left;
 }

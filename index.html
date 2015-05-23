@@ -482,32 +482,32 @@ max-height:25%;
 			bootbox.dialog("$areyousuretoquit", 
 			[
 				{
-					"label" : "<i class='icon-off'></i> $shutdown",
-					"class" : "btn btn-small",
+					"label" : "<i class='icon-off'></i> ",
+					"class" : "btn btn-fab",
 					"callback": function() {
 						alert('FORCE-SHUTDOWN###');
 					}
 				},
 
 				{
-					"label" : "<i class='icon-download-alt'></i> $suspend",
-					"class" : "btn btn-small",
+					"label" : "<i class='icon-download-alt'></i>",
+					"class" : "btn btn-fab",
 					"callback": function() {
 						alert('FORCE-SUSPEND###');
 					}
 				},
 
 				{
-					"label" : "<i class='icon-refresh'></i> $restart",
-					"class" : "btn btn-small",
+					"label" : "<i class='icon-refresh'></i> ",
+					"class" : "btn btn-fab",
 					"callback": function() {
 						alert('FORCE-RESTART###');
 					}
 				},
 
 				/*{
-					"label" : "<i class='icon-ban-circle'></i> $quit",
-					"class" : "btn btn-small",
+					"label" : "<i class='icon-ban-circle'></i>",
+					"class" : "btn btn-fab",
 					"callback": function() {
 						alert('QUIT###');
 					}
@@ -515,7 +515,7 @@ max-height:25%;
 
 				{
 					"label" : "<i class='icon-share-alt'></i> $remoteloginviaxdmcp",
-					"class" : "btn btn-small",
+					"class" : "btn btn-fab",
 					"callback": function() {
 						alert('XDMCP###');
 					}
@@ -523,7 +523,7 @@ max-height:25%;
 
 				{
 					"label" : "Cancel",
-					"class" : "btn-small"
+					"class" : "btn-fab"
 				}
 			]);
 		}
@@ -533,21 +533,24 @@ max-height:25%;
 	</script>
 
 	 <!-- Language selector -->
-    <div id="languageSelection" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="languageSelection" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="card">
     	<div class="modal-header">
     		<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
     		<h3 id="myModalLabel">$selectlanguage</h3>
     	</div>
+    	<div class="card">
     	<div class="modal-body">
     		<table class="table-striped table-bordered table-hover table-condensed" id="languages"></table>
     	</div>
     	<div class="modal-footer">
-    		<button class="btn btn-material-red" data-dismiss="modal" aria-hidden="true">$close</button>    		
+    		<a  data-dismiss="modal" aria-hidden="true"><img src="img/ic_cancel_white_48dp.png" id="close_button" style="margin-left:0em: width:36px; height: auto; display: inline-block; background:#B71C1C;"></a>    		
+    	</div>
     	</div>
     </div>
 
     <!-- Session selector -->
-    <div id="sessionSelection" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="sessionSelection" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="card">
+    	<div class="card">
     	<div class="modal-header">
     		<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
     		<h3 id="myModalLabel">$selectsession</h3>
@@ -556,7 +559,8 @@ max-height:25%;
     		<table class="table-striped table-bordered table-hover table-condensed" id="sessions"></table>
     	</div>
     	<div class="modal-footer">
-    		<button class="btn btn-material-red" data-dismiss="modal" aria-hidden="true">$close</button>    		
+    		<a data-dismiss="modal" aria-hidden="true"><img src="img/ic_cancel_white_48dp.png"  id="close_button" style="margin-left:0em: width:36px; height: auto; display: inline-block; background:#B71C1C;"></a>    		
+    	</div>
     	</div>
     </div>
 
@@ -591,17 +595,19 @@ max-height:25%;
 			<div id="lsb"><b>$lsb_description</b></div>
 			<div id="error" class="alert alert-error"></div>
 			<div id="timed" class="alert alert-info"></div>
+			
+			<a href="#languageSelection" role="button"  data-toggle="modal" title="$selectlanguage">
+				<img src="img/ic_public_white_48dp.png"  id="power_button" style="width:36px; height: auto; display: inline-block; background:#1565C0;"></a>
+
+			<a href="#sessionSelection" role="button"  data-toggle="modal" title="$selectsession">
+				<img class="img-responsive" src="img/ic_menu_white_48dp.png" id="power_button1"  style="width:36px; height: auto; display: inline-block; background:#1565C0;" ></a>
+
+			<a  href="#" onClick="quit_dialog();" title="$quit" >
+				<img class="img-responsive" src="img/ic_power_settings_new_white_48dp.png" id="power_button2" style="width:35px; height: auto; display: inline-block; background:#1565C0;" /></a>			
+	
 		</div>
 		
-
-		<div id="buttons">
-			<a href="#languageSelection" role="button" class="btn btn-material-bluegrey" id="language_button" data-toggle="modal" title="$selectlanguage"><img src="../common/img/languages/generic.png" height="16" id="current_language_flag"></a>
-
-			<a href="#sessionSelection" role="button" class="btn btn-material-bluegrey" id="session_button" data-toggle="modal" title="$selectsession"><img src="../common/img/sessions/default.svg" height="16" id="current_session_picture"></a>
-
-			<a class="btn btn-material-bluegrey" href="#" onClick="quit_dialog();" title="$quit" id="quit_button"><i class="icon-off"></i></a>			
-
-		</div>																						
+																				
 		
 		<div id="message"></div>
 
