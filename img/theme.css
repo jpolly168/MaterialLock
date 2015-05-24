@@ -185,21 +185,25 @@ body {
 .btn.btn-fab1 {
   margin: 0;
   padding: 15px;
-  font-size: 26px;\
-  background-color:#B71C1C;
-
+  font-size: 26px;
+  width: 56px;
+  height: 56px;
+  background:#000000;
+  background-image:url('img/ic_check_white_48dp.png');
 }
 .btn.btn-fab2 {
   margin: 0;
   padding: 15px;
   font-size: 26px;
- 
+  width: 56px;
+  height: 56px;
 }
 .btn.btn-fab3 {
   margin: 0;
   padding: 15px;
   font-size: 26px;
-
+  width: 56px;
+  height: 56px;
 }
 .btn.btn-fab4 {
   margin: 0;
@@ -207,8 +211,6 @@ body {
   font-size: 26px;
   width: 56px;
   height: 56px;
-  color:#1565C0;
-  background-color:#1565C0;
 }
 
 .btn.btn-fab,
